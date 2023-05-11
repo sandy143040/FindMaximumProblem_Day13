@@ -10,7 +10,17 @@ namespace FindMaximumProblem
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to Find maximum problem using generics");
+            Console.WriteLine("Enter first value:");
+            int first = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Enter second value:");
+            int second = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Enter third value:");
+            int third = Convert.ToInt32(Console.ReadLine());
+
+            FindMaxGeneric<int> findMax = new FindMaxGeneric<int>(first, second, third);
+            findMax.TestMaximum();
 
             Console.ReadLine();
         }
