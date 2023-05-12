@@ -10,16 +10,16 @@ namespace FindMaximumProblem
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter first value:");
-            float first = Convert.ToSingle(Console.ReadLine());
+            Console.WriteLine("Enter first string:");
+            string first = Console.ReadLine();
 
-            Console.WriteLine("Enter second value:");
-            float second = Convert.ToSingle(Console.ReadLine());
+            Console.WriteLine("Enter second string:");
+            string second = Console.ReadLine();
 
-            Console.WriteLine("Enter third value:");
-            float third = Convert.ToSingle(Console.ReadLine());
+            Console.WriteLine("Enter third string:");
+            string third = Console.ReadLine();
 
-            FindMaxGeneric<float> findMax = new FindMaxGeneric<float>(first, second, third);
+            FindMaxGeneric<string> findMax = new FindMaxGeneric<string>(first, second, third);
             findMax.TestMaximum();
 
             Console.ReadLine();
